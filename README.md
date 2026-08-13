@@ -38,7 +38,6 @@ The primary experiment configuration and available methods are defined in `main.
 - `adaptive_sample/`: confidence-sequence implementations and experiment code
 - `shared/`: command-line and experiment utilities
 - `examples/`: runnable code accompanying the tutorial
-- `tests/`: focused correctness tests
 - `_posts/`, `_layouts/`, and `assets/`: GitHub Pages blog source
 
 ## Citation

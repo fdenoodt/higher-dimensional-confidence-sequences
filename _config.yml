@@ -26,8 +26,6 @@ exclude:
   - main.py
   - README.md
   - requirements.txt
-  - requirements-dev.txt
   - run_experiments_async.py
   - examples/
-  - tests/
   - LICENSE
