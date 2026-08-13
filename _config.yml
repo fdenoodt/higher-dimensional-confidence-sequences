@@ -1,0 +1,33 @@
+title: High-Dimensional Confidence Sequences
+description: Official website for the paper "On the Tightness and Computational Tractability of Higher-Dimensional Confidence Sequences."
+url: https://fdenoodt.github.io
+baseurl: /higher-dimensional-confidence-sequences
+repository: fdenoodt/higher-dimensional-confidence-sequences
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+show_downloads: false
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+
+exclude:
+  - .idea/
+  - .run/
+  - .vscode/
+  - __pycache__/
+  - adaptive_sample/
+  - logs/
+  - shared/
+  - main.py
+  - README.md
+  - requirements.txt
+  - requirements-dev.txt
+  - run_experiments_async.py
+  - examples/
+  - tests/
+  - LICENSE

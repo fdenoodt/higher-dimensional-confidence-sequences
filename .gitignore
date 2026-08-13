@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Experiment outputs
+logs/
+adaptive_sample/conf_sequences/model_comparison/artifacts/
+*.ckpt
+*.pkl
+*.pth
+
+# Jekyll
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

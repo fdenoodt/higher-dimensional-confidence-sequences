@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<article class="post">
+  <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+</article>
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    },
+    options: {
+      processHtmlClass: 'math|math-block'
+    },
+    svg: { fontCache: 'global' },
+    startup: {
+      pageReady: () => {
+        document.querySelectorAll('.math').forEach((element) => {
+          const text = element.textContent.trim();
+          const match = text.match(/^\\?\((.*?)\\?\)$/s);
+
+          if (match) {
+            element.textContent = `\\(${match[1]}\\)`;
+          }
+        });
+
+        return MathJax.startup.defaultPageReady().then(() => {
+          return MathJax.typesetPromise(Array.from(document.querySelectorAll('.math')));
+        });
+      }
+    }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
