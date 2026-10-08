@@ -173,7 +173,7 @@ p(f(\mathbf{x})=z \mid \mathbf{x} \in \text{Women}).
 \]
 </div>
 
-This answers the more interpretable question: among examples belonging to this subgroup, how often is the model correct?
+This answers the more useful question: among examples belonging to this subgroup, how often is the model correct?
 
 ###  Conditional subgroup accuracy
 
