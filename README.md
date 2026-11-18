@@ -1,8 +1,8 @@
 # On the Tightness and Computational Tractability of Higher-Dimensional Confidence Sequences
 
-Official implementation of the confidence-sequence constructions and experiments from the paper **"On the Tightness and Computational Tractability of Higher-Dimensional Confidence Sequences"**, currently under review at NeurIPS 2026.
+Official implementation of the confidence-sequence constructions and experiments from the paper **"On the Tightness and Computational Tractability of Higher-Dimensional Confidence Sequences"**, accepted as a **Spotlight at NeurIPS 2026**.
 
-The current manuscript is available as a [PDF](paper.pdf).
+The paper is available on [arXiv](https://arxiv.org/abs/2610.03727) and as a [PDF](paper.pdf).
 
 The accompanying tutorial, [Monitoring ML Models with Confidence Sequences](https://fdenoodt.github.io/higher-dimensional-confidence-sequences/2026/04/30/monitoring-ml-models-with-confidence-sequences/), shows how to use the bounding-box construction to monitor overall and subgroup model performance.
 
@@ -47,12 +47,16 @@ The primary experiment configuration and available methods are defined in `main.
 If you use this code, please cite the paper:
 
 ```bibtex
-@misc{denoodt2026tightness,
-  title  = {On the Tightness and Computational Tractability of Higher-Dimensional Confidence Sequences},
-  author = {Denoodt, Fabian and Hess, Sibylle and Vanschoren, Joaquin and Naesseth, Christian A.},
-  year   = {2026},
-  note   = {Manuscript under review at the 40th Conference on Neural Information Processing Systems (NeurIPS 2026)},
-  url    = {https://github.com/fdenoodt/higher-dimensional-confidence-sequences/blob/main/paper.pdf}
+@inproceedings{denoodt2026tightness,
+  title         = {On the Tightness and Computational Tractability of Higher-Dimensional Confidence Sequences},
+  author        = {Denoodt, Fabian and Hess, Sibylle and Vanschoren, Joaquin and Naesseth, Christian A.},
+  booktitle     = {Advances in Neural Information Processing Systems},
+  year          = {2026},
+  note          = {Spotlight},
+  eprint        = {2610.03727},
+  archivePrefix = {arXiv},
+  primaryClass  = {stat.ML},
+  url           = {https://arxiv.org/abs/2610.03727}
 }
 ```
 
